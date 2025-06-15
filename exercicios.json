@@ -1,5 +1,5 @@
 {
-  "basicos": {
+  "básicos": {
     "soma": {
       "titulo": "Exercício: Soma",
       "descricao": "Implemente a função soma(a, b) que retorna a soma de dois números inteiros.",
@@ -170,7 +170,7 @@
       ]
     }
   },
-  "estrutura_repeticao": {
+  "estrutura de repetição": {
     "soma_ate_n": {
       "titulo": "Exercício: Soma até N",
       "descricao": "Implemente a função `soma_ate_n(n)` que retorna a soma de todos os números inteiros de 1 até `n`.",
@@ -284,7 +284,7 @@
       ]
     }
   },
-  "dicionarios": {
+  "dicionários": {
     "acessar_valor_dicionario": {
       "titulo": "Exercício: Acessar Valor em Dicionário",
       "descricao": "Implemente a função `acessar_valor_dicionario(dicionario, chave)` que retorna o valor associado à `chave` no `dicionario`. Se a chave não existir, retorne `None`.",
