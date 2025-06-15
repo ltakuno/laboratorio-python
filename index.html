@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Laboratório Python</title>
+
+  <!-- Estilo externo -->
+  <link rel="stylesheet" href="estilos.css" />
+
+  <!-- Bibliotecas Skulpt -->
+  <script src="https://unpkg.com/skulpt@1.2.0/dist/skulpt.min.js"></script>
+  <script src="https://unpkg.com/skulpt@1.2.0/dist/skulpt-stdlib.js"></script>
+</head>
+<body>
+  <header>Laboratório Python</header>
+
+  <main>
+    <div id="menu">
+      <h2>Exercícios</h2>
+      <ul id="lista-exercicios"></ul>
+    </div>
+
+    <div id="conteudo">
+      <h2 id="titulo">Selecione um exercício</h2>
+      <p id="descricao">Clique em um item à esquerda para começar.</p>
+
+      <textarea id="codigo"></textarea>
+      <br>
+      <button onclick="verificarResposta()">Verificar</button>
+
+      <h2>Resultados dos Testes:</h2>
+      <div id="test-result" class="test-result"></div>
+    </div>
+  </main>
+
+  <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,193 @@
+{
+  "soma": {
+    "titulo": "Exercício: Soma",
+    "descricao": "Implemente a função <code>soma(a, b)</code> que retorna a soma de dois números inteiros.",
+    "codigo": "def soma(a, b):\n    pass",
+    "testes": [
+      { "entrada": "soma(1, 2)", "esperado": "3" },
+      { "entrada": "soma(-1, 1)", "esperado": "0" },
+      { "entrada": "soma(0, 0)", "esperado": "0" }
+    ]
+  },
+  "dobro": {
+    "titulo": "Exercício: Dobro",
+    "descricao": "Implemente a função <code>dobro(n)</code> que retorna o dobro de um número.",
+    "codigo": "def dobro(n):\n    pass",
+    "testes": [
+      { "entrada": "dobro(2)", "esperado": "4" },
+      { "entrada": "dobro(0)", "esperado": "0" },
+      { "entrada": "dobro(-3)", "esperado": "-6" }
+    ]
+  },
+  "eh_par": {
+    "titulo": "Exercício: É Par?",
+    "descricao": "Retorne <code>True</code> se <code>n</code> for par, senão <code>False</code>.",
+    "codigo": "def eh_par(n):\n    pass",
+    "testes": [
+      { "entrada": "eh_par(2)", "esperado": "True" },
+      { "entrada": "eh_par(3)", "esperado": "False" },
+      { "entrada": "eh_par(0)", "esperado": "True" }
+    ]
+  },
+  "maior": {
+    "titulo": "Exercício: Maior Número",
+    "descricao": "Retorne o maior entre dois números.",
+    "codigo": "def maior(a, b):\n    pass",
+    "testes": [
+      { "entrada": "maior(5, 3)", "esperado": "5" },
+      { "entrada": "maior(2, 8)", "esperado": "8" },
+      { "entrada": "maior(4, 4)", "esperado": "4" }
+    ]
+  },
+  "inverter_string": {
+    "titulo": "Exercício: Inverter String",
+    "descricao": "Retorne a string invertida.",
+    "codigo": "def inverter_string(s):\n    pass",
+    "testes": [
+      { "entrada": "inverter_string('abc')", "esperado": "cba" },
+      { "entrada": "inverter_string('123')", "esperado": "321" },
+      { "entrada": "inverter_string('')", "esperado": "" }
+    ]
+  },
+  "fatorial": {
+    "titulo": "Exercício: Fatorial",
+    "descricao": "Retorne o fatorial de <code>n</code>.",
+    "codigo": "def fatorial(n):\n    pass",
+    "testes": [
+      { "entrada": "fatorial(5)", "esperado": "120" },
+      { "entrada": "fatorial(0)", "esperado": "1" },
+      { "entrada": "fatorial(3)", "esperado": "6" }
+    ]
+  },
+  "eh_vogal": {
+    "titulo": "Exercício: É Vogal?",
+    "descricao": "Retorne True se o caractere for uma vogal.",
+    "codigo": "def eh_vogal(c):\n    pass",
+    "testes": [
+      { "entrada": "eh_vogal('a')", "esperado": "True" },
+      { "entrada": "eh_vogal('b')", "esperado": "False" },
+      { "entrada": "eh_vogal('E')", "esperado": "True" }
+    ]
+  },
+  "contar_positivos": {
+    "titulo": "Exercício: Contar Positivos",
+    "descricao": "Retorne quantos números da lista são positivos.",
+    "codigo": "def contar_positivos(lista):\n    pass",
+    "testes": [
+      { "entrada": "contar_positivos([1, -2, 3, 0])", "esperado": "2" },
+      { "entrada": "contar_positivos([-1, -2])", "esperado": "0" },
+      { "entrada": "contar_positivos([0, 1, 2])", "esperado": "2" }
+    ]
+  },
+  "media": {
+    "titulo": "Exercício: Média",
+    "descricao": "Retorne a média de três números.",
+    "codigo": "def media(a, b, c):\n    pass",
+    "testes": [
+      { "entrada": "media(1, 2, 3)", "esperado": "2.0" },
+      { "entrada": "media(5, 5, 5)", "esperado": "5.0" },
+      { "entrada": "media(10, 0, 5)", "esperado": "5.0" }
+    ]
+  },
+  "eh_palindromo": {
+    "titulo": "Exercício: É Palíndromo?",
+    "descricao": "Retorne True se a string for um palíndromo.",
+    "codigo": "def eh_palindromo(s):\n    pass",
+    "testes": [
+      { "entrada": "eh_palindromo('arara')", "esperado": "True" },
+      { "entrada": "eh_palindromo('python')", "esperado": "False" },
+      { "entrada": "eh_palindromo('')", "esperado": "True" }
+    ]
+  },
+  "soma_lista": {
+    "titulo": "Exercício: Soma Lista",
+    "descricao": "Retorne a soma de todos os elementos da lista.",
+    "codigo": "def soma_lista(lista):\n    pass",
+    "testes": [
+      { "entrada": "soma_lista([1, 2, 3])", "esperado": "6" },
+      { "entrada": "soma_lista([])", "esperado": "0" },
+      { "entrada": "soma_lista([-1, -1])", "esperado": "-2" }
+    ]
+  },
+  "quantos_pares": {
+    "titulo": "Exercício: Quantos Pares",
+    "descricao": "Conte quantos números pares há na lista.",
+    "codigo": "def quantos_pares(lista):\n    pass",
+    "testes": [
+      { "entrada": "quantos_pares([1, 2, 3, 4])", "esperado": "2" },
+      { "entrada": "quantos_pares([1, 3, 5])", "esperado": "0" },
+      { "entrada": "quantos_pares([])", "esperado": "0" }
+    ]
+  },
+  "menor_valor": {
+    "titulo": "Exercício: Menor Valor",
+    "descricao": "Retorne o menor valor de uma lista.",
+    "codigo": "def menor_valor(lista):\n    pass",
+    "testes": [
+      { "entrada": "menor_valor([3, 1, 2])", "esperado": "1" },
+      { "entrada": "menor_valor([10])", "esperado": "10" },
+      { "entrada": "menor_valor([-1, -5, 0])", "esperado": "-5" }
+    ]
+  },
+  "primeira_maiuscula": {
+    "titulo": "Exercício: Primeira Maiúscula",
+    "descricao": "Retorne a string com a primeira letra em maiúscula.",
+    "codigo": "def primeira_maiuscula(s):\n    pass",
+    "testes": [
+      { "entrada": "primeira_maiuscula('python')", "esperado": "Python" },
+      { "entrada": "primeira_maiuscula('java')", "esperado": "Java" },
+      { "entrada": "primeira_maiuscula('')", "esperado": "" }
+    ]
+  },
+  "repetir_string": {
+    "titulo": "Exercício: Repetir String",
+    "descricao": "Repita a string <code>n</code> vezes.",
+    "codigo": "def repetir_string(s, n):\n    pass",
+    "testes": [
+      { "entrada": "repetir_string('a', 3)", "esperado": "aaa" },
+      { "entrada": "repetir_string('abc', 2)", "esperado": "abcabc" },
+      { "entrada": "repetir_string('x', 0)", "esperado": "" }
+    ]
+  },
+  "eh_multiplo": {
+    "titulo": "Exercício: É Múltiplo?",
+    "descricao": "Verifique se <code>a</code> é múltiplo de <code>b</code>.",
+    "codigo": "def eh_multiplo(a, b):\n    pass",
+    "testes": [
+      { "entrada": "eh_multiplo(10, 2)", "esperado": "True" },
+      { "entrada": "eh_multiplo(9, 3)", "esperado": "True" },
+      { "entrada": "eh_multiplo(5, 3)", "esperado": "False" }
+    ]
+  },
+  "trocar_valores": {
+    "titulo": "Exercício: Trocar Valores",
+    "descricao": "Retorne os dois valores trocados.",
+    "codigo": "def trocar_valores(a, b):\n    pass",
+    "testes": [
+      { "entrada": "trocar_valores(1, 2)", "esperado": "(2, 1)" },
+      { "entrada": "trocar_valores('a', 'b')", "esperado": "('b', 'a')" },
+      { "entrada": "trocar_valores(0, 0)", "esperado": "(0, 0)" }
+    ]
+  },
+  "maior_string": {
+    "titulo": "Exercício: Maior String",
+    "descricao": "Retorne a string com maior comprimento.",
+    "codigo": "def maior_string(a, b):\n    pass",
+    "testes": [
+      { "entrada": "maior_string('oi', 'olá')", "esperado": "olá" },
+      { "entrada": "maior_string('abc', 'xyz')", "esperado": "abc" },
+      { "entrada": "maior_string('', 'a')", "esperado": "a" }
+    ]
+  },
+  "area_retangulo": {
+    "titulo": "Exercício: Área do Retângulo",
+    "descricao": "Retorne a área de um retângulo (base * altura).",
+    "codigo": "def area_retangulo(base, altura):\n    pass",
+    "testes": [
+      { "entrada": "area_retangulo(5, 2)", "esperado": "10" },
+      { "entrada": "area_retangulo(3, 3)", "esperado": "9" },
+      { "entrada": "area_retangulo(0, 10)", "esperado": "0" }
+    ]
+  }
+}
+
