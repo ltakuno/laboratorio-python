@@ -1,92 +1,180 @@
-* {
-  box-sizing: border-box;
-}
+/* Estilos para o layout principal (já deve estar parecido no seu estilos.css) */
 body {
-  font-family: sans-serif;
-  background: #f8f9fa;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-header {
-  background-color: #495057;
-  color: #ffffff;
-  padding: 1rem 2rem;
-  font-size: 1.6rem;
-  font-weight: bold;
-  flex-shrink: 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
-}
-main {
-  flex: 1;
-  display: flex;
-  height: 0;
-}
-#menu {
-  width: 15%;
-  background-color: #343a40;
-  color: white;
-  padding: 1rem;
-  overflow-y: auto;
-}
-#menu h2 {
-  margin-top: 0;
-  font-size: 1.2rem;
-}
-#menu ul {
-  list-style: none;
-  padding: 0;
-}
-#menu li {
-  margin: 0.5rem 0;
-}
-#menu a {
-  color: #ffc107;
-  text-decoration: none;
-  display: block;
-  padding: 0.3rem 0.5rem;
-  border-radius: 4px;
-}
-#menu a:hover {
-  background-color: #495057;
-}
-#conteudo {
-  width: 85%;
-  padding: 2rem;
-  overflow-y: auto;
-}
-textarea {
-  width: 100%;
-  height: 200px;
-  font-family: monospace;
-  margin-bottom: 1rem;
-}
-pre {
-  background: #eee;
-  padding: 1rem;
-  white-space: pre-wrap;
-}
-button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-.test-result table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.test-result td {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-.ok {
-  background-color: #90ee90;
-  color: green;
-}
-.fail {
-  background-color: #ff6347;
-  color: white;
+    font-family: sans-serif;
+    display: flex; /* Para layout lado a lado do menu e conteúdo */
+    margin: 0;
+    height: 100vh; /* Ocupa a altura total da viewport */
 }
 
+header {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed; /* Fixa o cabeçalho */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que fique por cima de outros elementos */
+}
+
+main {
+    display: flex;
+    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
+#menu {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    overflow-y: auto; /* Adiciona scroll se o conteúdo for muito grande */
+    min-height: calc(100vh - 60px); /* Altura mínima para o menu considerando o cabeçalho */
+}
+
+#menu h2 {
+    color: #f0c040; /* Cor para o título "Exercícios" */
+    margin-top: 0;
+}
+
+#lista-exercicios {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para o título da categoria */
+.category-title {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #a0d0f0; /* Cor para os títulos das categorias */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.category-title:hover {
+    background-color: #555;
+}
+
+/* Estilo para a lista de exercícios dentro de cada categoria */
+.exercise-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px; /* Recuo para os itens de exercícios */
+    display: none; /* Esconde as listas de exercícios por padrão */
+}
+
+.exercise-list.active {
+    display: block; /* Mostra a lista quando a classe 'active' é adicionada */
+}
+
+/* Estilo para os links de exercícios */
+#lista-exercicios li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: background-color 0.2s;
+}
+
+#lista-exercicios li a:hover {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+#lista-exercicios li a.active-link {
+    background-color: #007bff; /* Cor para o exercício selecionado */
+    color: white;
+    border-radius: 3px;
+}
+
+
+#conteudo {
+    flex-grow: 1; /* Ocupa o espaço restante */
+    padding: 20px;
+    overflow-y: auto; /* Adiciona scroll se o conteúdo do exercício for muito grande */
+}
+
+#conteudo h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+#descricao {
+    background-color: #f8f8f8;
+    border-left: 5px solid #007bff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+textarea#codigo {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Inclui padding e borda no width */
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#test-result {
+    margin-top: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    overflow-x: auto; /* Para tabelas grandes */
+}
+
+#test-result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#test-result th, #test-result td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#test-result th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#test-result .ok {
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde escuro */
+}
+
+#test-result .fail {
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
+}
+
+#test-result p {
+    font-weight: bold;
+    margin-top: 10px;
+}
