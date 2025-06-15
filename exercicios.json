@@ -302,9 +302,9 @@
       "codigo": "def adicionar_item_dicionario(dicionario, chave, valor):\n    pass",
       "categoria": "Dicionários",
       "testes": [
-        { "entrada": "adicionar_item_dicionario({}, \"chave1\", 10)", "esperado": "{\"chave1\": 10}" },
-        { "entrada": "adicionar_item_dicionario({\"a\": 1}, \"a\", 2)", "esperado": "{\"a\": 2}" },
-        { "entrada": "adicionar_item_dicionario({\"cidade\": \"São Paulo\"}, \"populacao\", 12000000)", "esperado": "{\"cidade\": \"São Paulo\", \"populacao\": 12000000}" }
+        { "entrada": "adicionar_item_dicionario({}, \"chave1\", 10)", "esperado": "{\'chave1\': 10}" },
+        { "entrada": "adicionar_item_dicionario({\"a\": 1}, \"a\", 2)", "esperado": "{\'a\': 2}" },
+        { "entrada": "adicionar_item_dicionario({\"cidade\": \"São Paulo\"}, \"populacao\", 12000000)", "esperado": "{\'cidade\': \'São Paulo\', \'populacao\': 12000000}" }
       ]
     },
     "contar_frequencia_palavras": {
