@@ -2,7 +2,7 @@
   "basicos": {
     "soma": {
       "titulo": "Exercício: Soma",
-      "descricao": "Implemente a função <code>soma(a, b)</code> que retorna a soma de dois números inteiros.",
+      "descricao": "Implemente a função soma(a, b) que retorna a soma de dois números inteiros.",
       "codigo": "def soma(a, b):\n    pass",
       "categoria": "Básicos",
       "testes": [
@@ -13,7 +13,7 @@
     },
     "dobro": {
       "titulo": "Exercício: Dobro",
-      "descricao": "Implemente a função <code>dobro(n)</code> que retorna o dobro de um número.",
+      "descricao": "Implemente a função dobro(n) que retorna o dobro de um número.",
       "codigo": "def dobro(n):\n    pass",
       "categoria": "Básicos",
       "testes": [
@@ -43,6 +43,28 @@
         { "entrada": "multiplicacao(5, 0)", "esperado": "0" },
         { "entrada": "multiplicacao(-2, 3)", "esperado": "-6" }
       ]
+    },
+    "divisao": {
+      "titulo": "Exercício: Divisão",
+      "descricao": "Implemente a função `divisao(a, b)` que retorna a divisão de dois números. Considere que `b` nunca será zero.",
+      "codigo": "def divisao(a, b):\n    pass",
+      "categoria": "Básicos",
+      "testes": [
+        { "entrada": "divisao(10, 2)", "esperado": "5.0" },
+        { "entrada": "divisao(7, 2)", "esperado": "3.5" },
+        { "entrada": "divisao(-6, 3)", "esperado": "-2.0" }
+      ]
+    },
+    "resto_divisao": {
+      "titulo": "Exercício: Resto da Divisão",
+      "descricao": "Implemente a função `resto_divisao(a, b)` que retorna o resto da divisão inteira de `a` por `b`. Considere que `b` nunca será zero.",
+      "codigo": "def resto_divisao(a, b):\n    pass",
+      "categoria": "Básicos",
+      "testes": [
+        { "entrada": "resto_divisao(10, 3)", "esperado": "1" },
+        { "entrada": "resto_divisao(7, 2)", "esperado": "1" },
+        { "entrada": "resto_divisao(8, 4)", "esperado": "0" }
+      ]
     }
   },
   "condicionais": {
@@ -67,6 +89,39 @@
         { "entrada": "maior_numero(10, 3)", "esperado": "10" },
         { "entrada": "maior_numero(-2, -7)", "esperado": "-2" }
       ]
+    },
+    "eh_maior_idade": {
+      "titulo": "Exercício: Maior Idade",
+      "descricao": "Implemente a função `eh_maior_idade(idade)` que retorna `True` se a idade for 18 ou mais, e `False` caso contrário.",
+      "codigo": "def eh_maior_idade(idade):\n    pass",
+      "categoria": "Condicionais",
+      "testes": [
+        { "entrada": "eh_maior_idade(18)", "esperado": "True" },
+        { "entrada": "eh_maior_idade(17)", "esperado": "False" },
+        { "entrada": "eh_maior_idade(25)", "esperado": "True" }
+      ]
+    },
+    "classifica_triangulo": {
+      "titulo": "Exercício: Classifica Triângulo",
+      "descricao": "Implemente a função `classifica_triangulo(l1, l2, l3)` que retorna 'Equilátero', 'Isósceles' ou 'Escaleno' baseado nos lados. Considere que os lados formam um triângulo válido.",
+      "codigo": "def classifica_triangulo(l1, l2, l3):\n    pass",
+      "categoria": "Condicionais",
+      "testes": [
+        { "entrada": "classifica_triangulo(3, 3, 3)", "esperado": "\"Equilátero\"" },
+        { "entrada": "classifica_triangulo(3, 4, 3)", "esperado": "\"Isósceles\"" },
+        { "entrada": "classifica_triangulo(3, 4, 5)", "esperado": "\"Escaleno\"" }
+      ]
+    },
+    "eh_positivo": {
+      "titulo": "Exercício: É Positivo",
+      "descricao": "Implemente a função `eh_positivo(numero)` que retorna `True` se o número for positivo (maior que zero) e `False` caso contrário.",
+      "codigo": "def eh_positivo(numero):\n    pass",
+      "categoria": "Condicionais",
+      "testes": [
+        { "entrada": "eh_positivo(5)", "esperado": "True" },
+        { "entrada": "eh_positivo(-2)", "esperado": "False" },
+        { "entrada": "eh_positivo(0)", "esperado": "False" }
+      ]
     }
   },
   "strings": {
@@ -80,6 +135,213 @@
         { "entrada": "inverte_string(\"hello\")", "esperado": "\"olleh\"" },
         { "entrada": "inverte_string(\"\")", "esperado": "\"\"" }
       ]
+    },
+    "conta_vogais": {
+      "titulo": "Exercício: Conta Vogais",
+      "descricao": "Implemente a função `conta_vogais(s)` que retorna o número de vogais (a, e, i, o, u, maiúsculas e minúsculas) em uma string.",
+      "codigo": "def conta_vogais(s):\n    pass",
+      "categoria": "Strings",
+      "testes": [
+        { "entrada": "conta_vogais(\"Python\")", "esperado": "2" },
+        { "entrada": "conta_vogais(\"AEIOU\")", "esperado": "5" },
+        { "entrada": "conta_vogais(\"rythm\")", "esperado": "0" }
+      ]
+    },
+    "remove_espacos": {
+      "titulo": "Exercício: Remove Espaços",
+      "descricao": "Implemente a função `remove_espacos(s)` que retorna a string sem espaços em branco no início e no fim, e sem espaços duplicados no meio.",
+      "codigo": "def remove_espacos(s):\n    pass",
+      "categoria": "Strings",
+      "testes": [
+        { "entrada": "remove_espacos(\"  olá mundo  \")", "esperado": "\"olá mundo\"" },
+        { "entrada": "remove_espacos(\"uma   frase com  muitos espaços\")", "esperado": "\"uma frase com muitos espaços\"" },
+        { "entrada": "remove_espacos(\"semespacos\")", "esperado": "\"semespacos\"" }
+      ]
+    },
+    "eh_palindromo": {
+      "titulo": "Exercício: É Palíndromo",
+      "descricao": "Implemente a função `eh_palindromo(s)` que retorna `True` se a string for um palíndromo (lê-se da mesma forma de trás para frente, ignorando maiúsculas/minúsculas e espaços) e `False` caso contrário.",
+      "codigo": "def eh_palindromo(s):\n    pass",
+      "categoria": "Strings",
+      "testes": [
+        { "entrada": "eh_palindromo(\"arara\")", "esperado": "True" },
+        { "entrada": "eh_palindromo(\"A man a plan a canal Panama\")", "esperado": "True" },
+        { "entrada": "eh_palindromo(\"hello\")", "esperado": "False" }
+      ]
+    }
+  },
+  "estrutura_repeticao": {
+    "soma_ate_n": {
+      "titulo": "Exercício: Soma até N",
+      "descricao": "Implemente a função `soma_ate_n(n)` que retorna a soma de todos os números inteiros de 1 até `n`.",
+      "codigo": "def soma_ate_n(n):\n    pass",
+      "categoria": "Estrutura de Repetição",
+      "testes": [
+        { "entrada": "soma_ate_n(5)", "esperado": "15" },
+        { "entrada": "soma_ate_n(1)", "esperado": "1" },
+        { "entrada": "soma_ate_n(0)", "esperado": "0" }
+      ]
+    },
+    "fatorial": {
+      "titulo": "Exercício: Fatorial",
+      "descricao": "Implemente a função `fatorial(n)` que retorna o fatorial de um número inteiro não negativo `n`.",
+      "codigo": "def fatorial(n):\n    pass",
+      "categoria": "Estrutura de Repetição",
+      "testes": [
+        { "entrada": "fatorial(5)", "esperado": "120" },
+        { "entrada": "fatorial(0)", "esperado": "1" },
+        { "entrada": "fatorial(3)", "esperado": "6" }
+      ]
+    },
+    "numeros_pares_ate_n": {
+      "titulo": "Exercício: Números Pares até N",
+      "descricao": "Implemente a função `numeros_pares_ate_n(n)` que retorna uma lista com todos os números pares de 0 até `n` (inclusive).",
+      "codigo": "def numeros_pares_ate_n(n):\n    pass",
+      "categoria": "Estrutura de Repetição",
+      "testes": [
+        { "entrada": "numeros_pares_ate_n(10)", "esperado": "[0, 2, 4, 6, 8, 10]" },
+        { "entrada": "numeros_pares_ate_n(5)", "esperado": "[0, 2, 4]" },
+        { "entrada": "numeros_pares_ate_n(0)", "esperado": "[0]" }
+      ]
+    },
+    "contar_ocorrencias_lista": {
+      "titulo": "Exercício: Contar Ocorrências em Lista",
+      "descricao": "Implemente a função `contar_ocorrencias_lista(lista, elemento)` que retorna o número de vezes que um `elemento` aparece em uma `lista`.",
+      "codigo": "def contar_ocorrencias_lista(lista, elemento):\n    pass",
+      "categoria": "Estrutura de Repetição",
+      "testes": [
+        { "entrada": "contar_ocorrencias_lista([1, 2, 2, 3, 2], 2)", "esperado": "3" },
+        { "entrada": "contar_ocorrencias_lista([\"a\", \"b\", \"a\"], \"a\")", "esperado": "2" },
+        { "entrada": "contar_ocorrencias_lista([1, 2, 3], 4)", "esperado": "0" }
+      ]
+    },
+    "primos_ate_n": {
+      "titulo": "Exercício: Primos até N",
+      "descricao": "Implemente a função `primos_ate_n(n)` que retorna uma lista com todos os números primos de 2 até `n` (inclusive).",
+      "codigo": "def primos_ate_n(n):\n    pass",
+      "categoria": "Estrutura de Repetição",
+      "testes": [
+        { "entrada": "primos_ate_n(10)", "esperado": "[2, 3, 5, 7]" },
+        { "entrada": "primos_ate_n(2)", "esperado": "[2]" },
+        { "entrada": "primos_ate_n(1)", "esperado": "[]" }
+      ]
+    }
+  },
+  "listas": {
+    "maior_elemento_lista": {
+      "titulo": "Exercício: Maior Elemento da Lista",
+      "descricao": "Implemente a função `maior_elemento_lista(lista)` que retorna o maior número em uma lista de inteiros.",
+      "codigo": "def maior_elemento_lista(lista):\n    pass",
+      "categoria": "Listas",
+      "testes": [
+        { "entrada": "maior_elemento_lista([1, 5, 2, 9, 3])", "esperado": "9" },
+        { "entrada": "maior_elemento_lista([-10, -1, -5])", "esperado": "-1" },
+        { "entrada": "maior_elemento_lista([7])", "esperado": "7" }
+      ]
+    },
+    "soma_elementos_lista": {
+      "titulo": "Exercício: Soma dos Elementos da Lista",
+      "descricao": "Implemente a função `soma_elementos_lista(lista)` que retorna a soma de todos os números em uma lista de inteiros.",
+      "codigo": "def soma_elementos_lista(lista):\n    pass",
+      "categoria": "Listas",
+      "testes": [
+        { "entrada": "soma_elementos_lista([1, 2, 3, 4])", "esperado": "10" },
+        { "entrada": "soma_elementos_lista([10, -5, 0])", "esperado": "5" },
+        { "entrada": "soma_elementos_lista([])", "esperado": "0" }
+      ]
+    },
+    "filtra_pares": {
+      "titulo": "Exercício: Filtrar Números Pares",
+      "descricao": "Implemente a função `filtra_pares(lista)` que retorna uma nova lista contendo apenas os números pares da lista original.",
+      "codigo": "def filtra_pares(lista):\n    pass",
+      "categoria": "Listas",
+      "testes": [
+        { "entrada": "filtra_pares([1, 2, 3, 4, 5, 6])", "esperado": "[2, 4, 6]" },
+        { "entrada": "filtra_pares([7, 9, 11])", "esperado": "[]" },
+        { "entrada": "filtra_pares([0, 20])", "esperado": "[0, 20]" }
+      ]
+    },
+    "concatena_listas": {
+      "titulo": "Exercício: Concatena Listas",
+      "descricao": "Implemente a função `concatena_listas(lista1, lista2)` que retorna uma nova lista contendo todos os elementos da `lista1` seguidos pelos elementos da `lista2`.",
+      "codigo": "def concatena_listas(lista1, lista2):\n    pass",
+      "categoria": "Listas",
+      "testes": [
+        { "entrada": "concatena_listas([1, 2], [3, 4])", "esperado": "[1, 2, 3, 4]" },
+        { "entrada": "concatena_listas([\"a\", \"b\"], [])", "esperado": "[\"a\", \"b\"]" },
+        { "entrada": "concatena_listas([], [\"x\", \"y\"])", "esperado": "[\"x\", \"y\"]" }
+      ]
+    },
+    "media_lista": {
+      "titulo": "Exercício: Média da Lista",
+      "descricao": "Implemente a função `media_lista(lista)` que retorna a média aritmética dos números em uma lista. Se a lista for vazia, retorne 0.",
+      "codigo": "def media_lista(lista):\n    pass",
+      "categoria": "Listas",
+      "testes": [
+        { "entrada": "media_lista([1, 2, 3, 4, 5])", "esperado": "3.0" },
+        { "entrada": "media_lista([10, 20, 30])", "esperado": "20.0" },
+        { "entrada": "media_lista([])", "esperado": "0" }
+      ]
+    }
+  },
+  "dicionarios": {
+    "acessar_valor_dicionario": {
+      "titulo": "Exercício: Acessar Valor em Dicionário",
+      "descricao": "Implemente a função `acessar_valor_dicionario(dicionario, chave)` que retorna o valor associado à `chave` no `dicionario`. Se a chave não existir, retorne `None`.",
+      "codigo": "def acessar_valor_dicionario(dicionario, chave):\n    pass",
+      "categoria": "Dicionários",
+      "testes": [
+        { "entrada": "acessar_valor_dicionario({\"nome\": \"João\", \"idade\": 30}, \"nome\")", "esperado": "\"João\"" },
+        { "entrada": "acessar_valor_dicionario({\"fruta\": \"maçã\"}, \"cor\")", "esperado": "null" },
+        { "entrada": "acessar_valor_dicionario({}, \"vazio\")", "esperado": "null" }
+      ]
+    },
+    "adicionar_item_dicionario": {
+      "titulo": "Exercício: Adicionar Item ao Dicionário",
+      "descricao": "Implemente a função `adicionar_item_dicionario(dicionario, chave, valor)` que adiciona (ou atualiza) um item no `dicionario` com a `chave` e `valor` fornecidos. A função deve retornar o dicionário modificado.",
+      "codigo": "def adicionar_item_dicionario(dicionario, chave, valor):\n    pass",
+      "categoria": "Dicionários",
+      "testes": [
+        { "entrada": "adicionar_item_dicionario({}, \"chave1\", 10)", "esperado": "{\"chave1\": 10}" },
+        { "entrada": "adicionar_item_dicionario({\"a\": 1}, \"a\", 2)", "esperado": "{\"a\": 2}" },
+        { "entrada": "adicionar_item_dicionario({\"cidade\": \"São Paulo\"}, \"populacao\", 12000000)", "esperado": "{\"cidade\": \"São Paulo\", \"populacao\": 12000000}" }
+      ]
+    },
+    "contar_frequencia_palavras": {
+      "titulo": "Exercício: Contar Frequência de Palavras",
+      "descricao": "Implemente a função `contar_frequencia_palavras(texto)` que retorna um dicionário onde as chaves são as palavras (em minúsculas) e os valores são as suas frequências no texto. Ignore pontuações.",
+      "codigo": "def contar_frequencia_palavras(texto):\n    pass",
+      "categoria": "Dicionários",
+      "testes": [
+        { "entrada": "contar_frequencia_palavras(\"Olá mundo olá\")", "esperado": "{\"olá\": 2, \"mundo\": 1}" },
+        { "entrada": "contar_frequencia_palavras(\"Python é divertido\")", "esperado": "{\"python\": 1, \"é\": 1, \"divertido\": 1}" },
+        { "entrada": "contar_frequencia_palavras(\"\")", "esperado": "{}" }
+      ]
+    }
+  },
+  "matrizes": {
+    "soma_matrizes_2x2": {
+      "titulo": "Exercício: Soma de Matrizes 2x2",
+      "descricao": "Implemente a função `soma_matrizes_2x2(matriz1, matriz2)` que recebe duas matrizes 2x2 e retorna uma nova matriz 2x2 resultante da soma elemento a elemento.",
+      "codigo": "def soma_matrizes_2x2(matriz1, matriz2):\n    pass",
+      "categoria": "Matrizes",
+      "testes": [
+        { "entrada": "soma_matrizes_2x2([[1, 2], [3, 4]], [[5, 6], [7, 8]])", "esperado": "[[6, 8], [10, 12]]" },
+        { "entrada": "soma_matrizes_2x2([[0, 0], [0, 0]], [[1, 1], [1, 1]])", "esperado": "[[1, 1], [1, 1]]" },
+        { "entrada": "soma_matrizes_2x2([[-1, 2], [3, -4]], [[1, -2], [-3, 4]])", "esperado": "[[0, 0], [0, 0]]" }
+      ]
+    },
+    "transpor_matriz_2x2": {
+      "titulo": "Exercício: Transpor Matriz 2x2",
+      "descricao": "Implemente a função `transpor_matriz_2x2(matriz)` que recebe uma matriz 2x2 e retorna sua transposta.",
+      "codigo": "def transpor_matriz_2x2(matriz):\n    pass",
+      "categoria": "Matrizes",
+      "testes": [
+        { "entrada": "transpor_matriz_2x2([[1, 2], [3, 4]])", "esperado": "[[1, 3], [2, 4]]" },
+        { "entrada": "transpor_matriz_2x2([[5, 6], [7, 8]])", "esperado": "[[5, 7], [6, 8]]" },
+        { "entrada": "transpor_matriz_2x2([[0, 1], [1, 0]])", "esperado": "[[0, 1], [1, 0]]" }
+      ]
     }
   }
 }
+
