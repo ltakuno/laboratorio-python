@@ -292,8 +292,8 @@
       "categoria": "Dicionários",
       "testes": [
         { "entrada": "acessar_valor_dicionario({\"nome\": \"João\", \"idade\": 30}, \"nome\")", "esperado": "\"João\"" },
-        { "entrada": "acessar_valor_dicionario({\"fruta\": \"maçã\"}, \"cor\")", "esperado": "null" },
-        { "entrada": "acessar_valor_dicionario({}, \"vazio\")", "esperado": "null" }
+        { "entrada": "acessar_valor_dicionario({\"fruta\": \"maçã\"}, \"cor\")", "esperado": "None" },
+        { "entrada": "acessar_valor_dicionario({}, \"vazio\")", "esperado": "None" }
       ]
     },
     "adicionar_item_dicionario": {
