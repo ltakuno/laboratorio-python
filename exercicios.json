@@ -291,7 +291,7 @@
       "codigo": "def acessar_valor_dicionario(dicionario, chave):\n    pass",
       "categoria": "Dicionários",
       "testes": [
-        { "entrada": "acessar_valor_dicionario({\"nome\": \"João\", \"idade\": 30}, \"nome\")", "esperado": "\"João\"" },
+        { "entrada": "acessar_valor_dicionario({\"nome\": \"João\", \"idade\": 30}, \"nome\")", "esperado": "João" },
         { "entrada": "acessar_valor_dicionario({\"fruta\": \"maçã\"}, \"cor\")", "esperado": "None" },
         { "entrada": "acessar_valor_dicionario({}, \"vazio\")", "esperado": "None" }
       ]
