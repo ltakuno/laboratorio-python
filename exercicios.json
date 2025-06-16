@@ -123,7 +123,19 @@
         { "entrada": "eh_positivo(0)", "esperado": "False" }
       ]
     },
-    "dia_da_semana": {
+    "dormir": {
+      "titulo": "Exercício: Dormir (Nick Parlante - CodingBat)",
+      "descricao": "Implemente a função `dormir(dia_semana, feriado)`, onde dia_semana é True para dias na semana e feriado é True nos feriados. A função dormir() retorna `True` indicando que se pode dormir quando é feriado ou não é dia da semana, devolva False caso não se pode dormir.",
+      "codigo": "def dormir(dia_semana, feriado):\n    pass",
+      "categoria": "Condicionais",
+      "testes": [
+        { "entrada": "dormir(False, False)", "esperado": "True" },
+        { "entrada": "dormir(True, False)", "esperado": "False" },
+        { "entrada": "dormir(False, True)", "esperado": "True" },
+        { "entrada": "dormir(True, True)", "esperado": "True" }      
+      ]
+    },
+   "dia_da_semana": {
         "titulo": "Exercício: Dia da Semana",
         "descricao": "Implemente a função `dia_da_semana(dia, mes, ano)` que calcula em qual dia da semana caiu uma determinada data. <br>Use a seguinte fórmula:<br><br><pre>DiaSemana = (ano - 1901) * 365 + (ano - 1901) // 4 + dia <br>            + (mes - 1) * 31<br>            - ((mes * 4 + 23) // 10) * ((mes + 12) // 15)<br>            + ((4 - ano % 4) // 4) * ((mes + 12) // 15)</pre> <br><br>O valor de `DiaSemana % 7` indica o dia da semana:<br><br>0 → segunda-feira<br>1 → terça-feira<br>2 → quarta-feira<br>3 → quinta-feira<br>4 → sexta-feira<br>5 → sábado<br>6 → domingo",
         "codigo": "def dia_da_semana(dia, mes, ano):\n    pass",
