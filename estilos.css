@@ -1,69 +1,40 @@
-/* Layout base */
+/* Estilos para o layout principal (já deve estar parecido no seu estilos.css) */
 body {
     font-family: sans-serif;
+    display: flex; /* Para layout lado a lado do menu e conteúdo */
     margin: 0;
-    height: 100vh;
+    height: 100vh; /* Ocupa a altura total da viewport */
 }
 
-/* Cabeçalho fixo e mais grosso */
 header {
     background-color: #444;
     color: white;
-    padding: 20px 20px;       /* Mais alto */
+    padding: 10px 20px;
     text-align: center;
-    position: fixed;
+    position: fixed; /* Fixa o cabeçalho */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    font-size: 24px;          /* Opcional: aumenta a fonte */
-    font-weight: bold;
+    z-index: 1000; /* Garante que fique por cima de outros elementos */
 }
 
-/* Menu lateral fixo abaixo do cabeçalho */
+main {
+    display: flex;
+    flex-grow: 1; /* Permite que o main ocupe o espaço restante */
+    padding-top: 60px; /* Espaço para o cabeçalho fixo */
+}
+
 #menu {
-    position: fixed;
-    top: 80px;                /* Mesmo valor do header (20px padding + algum ajuste) */
-    bottom: 0;
-    left: 0;
     width: 250px;
     background-color: #333;
     color: white;
     padding: 20px;
-    overflow-y: auto;
+    overflow-y: auto; /* Adiciona scroll se o conteúdo for muito grande */
+    min-height: calc(100vh - 60px); /* Altura mínima para o menu considerando o cabeçalho */
 }
 
-/* Área principal do conteúdo */
-main {
-    margin-left: 250px;       /* Largura do menu */
-    padding-top: 80px;        /* Altura do cabeçalho */
-    display: flex;
-    flex-grow: 1;
-}
-
-/* Conteúdo principal */
-#conteudo {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-/* Títulos e descrição */
-#conteudo h2 {
-    color: #333;
-    margin-top: 0;
-}
-
-#descricao {
-    background-color: #f8f8f8;
-    border-left: 5px solid #007bff;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-/* Estilos do menu lateral */
 #menu h2 {
-    color: #f0c040;
+    color: #f0c040; /* Cor para o título "Exercícios" */
     margin-top: 0;
 }
 
@@ -73,11 +44,12 @@ main {
     margin: 0;
 }
 
+/* Estilo para o título da categoria */
 .category-title {
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 5px;
-    color: #a0d0f0;
+    color: #a0d0f0; /* Cor para os títulos das categorias */
     cursor: pointer;
     padding: 5px;
     border-radius: 3px;
@@ -88,18 +60,20 @@ main {
     background-color: #555;
 }
 
+/* Estilo para a lista de exercícios dentro de cada categoria */
 .exercise-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-left: 15px;
-    display: none;
+    padding-left: 15px; /* Recuo para os itens de exercícios */
+    display: none; /* Esconde as listas de exercícios por padrão */
 }
 
 .exercise-list.active {
-    display: block;
+    display: block; /* Mostra a lista quando a classe 'active' é adicionada */
 }
 
+/* Estilo para os links de exercícios */
 #lista-exercicios li a {
     color: white;
     text-decoration: none;
@@ -114,12 +88,30 @@ main {
 }
 
 #lista-exercicios li a.active-link {
-    background-color: #007bff;
+    background-color: #007bff; /* Cor para o exercício selecionado */
     color: white;
     border-radius: 3px;
 }
 
-/* Editor de código */
+
+#conteudo {
+    flex-grow: 1; /* Ocupa o espaço restante */
+    padding: 20px;
+    overflow-y: auto; /* Adiciona scroll se o conteúdo do exercício for muito grande */
+}
+
+#conteudo h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+#descricao {
+    background-color: #f8f8f8;
+    border-left: 5px solid #007bff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 textarea#codigo {
     width: 100%;
     height: 250px;
@@ -128,11 +120,10 @@ textarea#codigo {
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Inclui padding e borda no width */
     margin-bottom: 10px;
 }
 
-/* Botão */
 button {
     background-color: #007bff;
     color: white;
@@ -147,14 +138,13 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Tabela de resultados */
 #test-result {
     margin-top: 20px;
     border: 1px solid #eee;
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 4px;
-    overflow-x: auto;
+    overflow-x: auto; /* Para tabelas grandes */
 }
 
 #test-result table {
@@ -175,17 +165,16 @@ button:hover {
 }
 
 #test-result .ok {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Verde escuro */
 }
 
 #test-result .fail {
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24; /* Vermelho escuro */
 }
 
 #test-result p {
     font-weight: bold;
     margin-top: 10px;
 }
-
