@@ -44,15 +44,15 @@
         { "entrada": "celsius_para_fahrenheit(50)", "esperado": "122.0" }
       ]
     },
-    "divisao": {
-      "titulo": "Exercício: Divisão",
-      "descricao": "Implemente a função `divisao(a, b)` que retorna a divisão de dois números. Considere que `b` nunca será zero.",
-      "codigo": "def divisao(a, b):\n    pass",
+    "Média aritmética": {
+      "titulo": "Exercício: Média aritmética",
+      "descricao": "Implemente a função `media_tres(a, b, c)` que retorna a média entre os números a, b e c.",
+      "codigo": "def media_tres(a, b, c):\n    pass",
       "categoria": "Básicos",
       "testes": [
-        { "entrada": "divisao(10, 2)", "esperado": "5.0" },
-        { "entrada": "divisao(7, 2)", "esperado": "3.5" },
-        { "entrada": "divisao(-6, 3)", "esperado": "-2.0" }
+        { "entrada": "media_tres(3, 3, 3)", "esperado": "3.0" },
+        { "entrada": "media_tres(1, 2, 3)", "esperado": "2.0" },
+        { "entrada": "media_tres(0, 0, 0)", "esperado": "0.0" }
       ]
     },
     "resto_divisao": {
