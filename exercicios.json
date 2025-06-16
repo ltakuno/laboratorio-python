@@ -124,8 +124,8 @@
       ]
     },
     "dormir": {
-      "titulo": "Exercício: Dormir (Nick Parlante - CodingBat)",
-      "descricao": "Implemente a função `dormir(dia_semana, feriado)`, onde dia_semana é True para dias na semana e feriado é True nos feriados. A função dormir() retorna `True` indicando que se pode dormir quando é feriado ou não é dia da semana, devolva False caso não se pode dormir.",
+      "titulo": "Exercício: Dormir",
+      "descricao": "(Nick Parlante - CodingBat) Implemente a função `dormir(dia_semana, feriado)`, onde dia_semana é True para dias na semana e feriado é True nos feriados. A função dormir() retorna `True` indicando que se pode dormir quando é feriado ou não é dia da semana, devolva False caso não se pode dormir.",
       "codigo": "def dormir(dia_semana, feriado):\n    pass",
       "categoria": "Condicionais",
       "testes": [
