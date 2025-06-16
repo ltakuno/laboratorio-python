@@ -107,9 +107,9 @@
       "codigo": "def classifica_triangulo(l1, l2, l3):\n    pass",
       "categoria": "Condicionais",
       "testes": [
-        { "entrada": "classifica_triangulo(3, 3, 3)", "esperado": "\"Equilátero\"" },
-        { "entrada": "classifica_triangulo(3, 4, 3)", "esperado": "\"Isósceles\"" },
-        { "entrada": "classifica_triangulo(3, 4, 5)", "esperado": "\"Escaleno\"" }
+        { "entrada": "classifica_triangulo(3, 3, 3)", "esperado": "Equilátero" },
+        { "entrada": "classifica_triangulo(3, 4, 3)", "esperado": "Isósceles" },
+        { "entrada": "classifica_triangulo(3, 4, 5)", "esperado": "Escaleno" }
       ]
     },
     "eh_positivo": {
