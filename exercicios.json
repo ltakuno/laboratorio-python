@@ -179,9 +179,9 @@
       "codigo": "def remove_espacos(s):\n    pass",
       "categoria": "Strings",
       "testes": [
-        { "entrada": "remove_espacos(\"  olá mundo  \")", "esperado": "\"olá mundo\"" },
-        { "entrada": "remove_espacos(\"uma   frase com  muitos espaços\")", "esperado": "\"uma frase com muitos espaços\"" },
-        { "entrada": "remove_espacos(\"semespacos\")", "esperado": "\"semespacos\"" }
+        { "entrada": "remove_espacos(\"  olá mundo  \")", "esperado": "olá mundo" },
+        { "entrada": "remove_espacos(\"uma   frase com  muitos espaços\")", "esperado": "uma frase com muitos espaços" },
+        { "entrada": "remove_espacos(\"semespacos\")", "esperado": "semespacos" }
       ]
     },
     "eh_palindromo": {
