@@ -125,7 +125,7 @@
     },
     "dia_da_semana": {
         "titulo": "Exercício: Dia da Semana",
-        "descricao": "Implemente a função dia_da_semana(dia, mes, ano) que calcula em qual dia da semana caiu uma determinada data. <br>Use a seguinte fórmula:<br><br><pre>DiaSemana = (ano - 1901) * 365 + (ano - 1901) // 4 + dia <br>            + (mes - 1) * 31<br>            - ((mes * 4 + 23) // 10) * ((mes + 12) // 15)<br>            + ((4 - ano % 4) // 4) * ((mes + 12) // 15)</pre> <br><br>O valor de `DiaSemana % 7` indica o dia da semana:<br><br>0 → segunda-feira<br>1 → terça-feira<br>2 → quarta-feira<br>3 → quinta-feira<br>4 → sexta-feira<br>5 → sábado<br>6 → domingo",
+        "descricao": "Implemente a função `dia_da_semana(dia, mes, ano)` que calcula em qual dia da semana caiu uma determinada data. <br>Use a seguinte fórmula:<br><br><pre>DiaSemana = (ano - 1901) * 365 + (ano - 1901) // 4 + dia <br>            + (mes - 1) * 31<br>            - ((mes * 4 + 23) // 10) * ((mes + 12) // 15)<br>            + ((4 - ano % 4) // 4) * ((mes + 12) // 15)</pre> <br><br>O valor de `DiaSemana % 7` indica o dia da semana:<br><br>0 → segunda-feira<br>1 → terça-feira<br>2 → quarta-feira<br>3 → quinta-feira<br>4 → sexta-feira<br>5 → sábado<br>6 → domingo",
         "codigo": "def dia_da_semana(dia, mes, ano):\n    pass",
         "categoria": "Condicionais",
         "testes": [
