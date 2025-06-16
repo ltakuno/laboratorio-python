@@ -22,17 +22,16 @@
         { "entrada": "dobro(-3)", "esperado": "-6" }
       ]
     },
-    "subtracao": {
-      "titulo": "Exercício: Subtração",
-      "descricao": "Implemente a função `subtracao(a, b)` que retorna a subtração de dois números inteiros.",
-      "codigo": "def subtracao(a, b):\n    pass",
-      "categoria": "Básicos",
+    "area_retangulo": {
+      "titulo": "Exercício: Área do Retângulo",
+      "descricao": "Retorne a área de um retângulo (base * altura).",
+      "codigo": "def area_retangulo(base, altura):\n    pass",
       "testes": [
-        { "entrada": "subtracao(5, 2)", "esperado": "3" },
-        { "entrada": "subtracao(10, 3)", "esperado": "7" },
-        { "entrada": "subtracao(-5, 5)", "esperado": "-10" }
-      ]
-    },
+         { "entrada": "area_retangulo(5, 2)", "esperado": "10" },
+         { "entrada": "area_retangulo(3, 3)", "esperado": "9" },
+         { "entrada": "area_retangulo(0, 10)", "esperado": "0" }
+    ]
+   },
     "multiplicacao": {
       "titulo": "Exercício: Multiplicação",
       "descricao": "Implemente a função `multiplicacao(a, b)` que retorna a multiplicação de dois números inteiros.",
