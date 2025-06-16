@@ -350,8 +350,8 @@
       "codigo": "def contar_frequencia_palavras(texto):\n    pass",
       "categoria": "Dicionários",
       "testes": [
-        { "entrada": "contar_frequencia_palavras(\"Olá mundo olá\")", "esperado": "{\"olá\": 2, \"mundo\": 1}" },
-        { "entrada": "contar_frequencia_palavras(\"Python é divertido\")", "esperado": "{\"python\": 1, \"é\": 1, \"divertido\": 1}" },
+        { "entrada": "contar_frequencia_palavras(\"Olá mundo olá\")", "esperado": "{'olá': 2, 'mundo': 1}" },
+        { "entrada": "contar_frequencia_palavras(\"Python é divertido\")", "e'sperado": "{'python': 1, 'é': 1, 'divertido': 1}" },
         { "entrada": "contar_frequencia_palavras(\"\")", "esperado": "{}" }
       ]
     }
