@@ -33,14 +33,15 @@
     ]
    },
     "multiplicacao": {
-      "titulo": "Exercício: Multiplicação",
-      "descricao": "Implemente a função `multiplicacao(a, b)` que retorna a multiplicação de dois números inteiros.",
-      "codigo": "def multiplicacao(a, b):\n    pass",
+      "titulo": "Exercício: Conversão de Celsius para Fahrenheit",
+      "descricao": "Implemente a função `celsius_para_fahrenheit(c)` que recebe a temperatura em graus Celsius e converta em graus Fahrenheit. <br> Fórmula: <pre>F = C * 9 / 5 + 32</pre> ",
+      "codigo": "def celsius_para_fahrenheit(c):\n    pass",
       "categoria": "Básicos",
       "testes": [
-        { "entrada": "multiplicacao(3, 4)", "esperado": "12" },
-        { "entrada": "multiplicacao(5, 0)", "esperado": "0" },
-        { "entrada": "multiplicacao(-2, 3)", "esperado": "-6" }
+        { "entrada": "celsius_para_fahrenheit(0)", "esperado": "32.0" },
+        { "entrada": "celsius_para_fahrenheit(100)", "esperado": "212.0" },
+        { "entrada": "celsius_para_fahrenheit(10)", "esperado": "50.0" },
+        { "entrada": "celsius_para_fahrenheit(50)", "esperado": "122.0" }
       ]
     },
     "divisao": {
