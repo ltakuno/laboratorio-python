@@ -26,6 +26,7 @@
       "titulo": "Exercício: Área do Retângulo",
       "descricao": "Retorne a área de um retângulo (base * altura).",
       "codigo": "def area_retangulo(base, altura):\n    pass",
+      "categoria": "Básicos",
       "testes": [
          { "entrada": "area_retangulo(5, 2)", "esperado": "10" },
          { "entrada": "area_retangulo(3, 3)", "esperado": "9" },
@@ -59,7 +60,7 @@
       "titulo": "Exercício: Minutos em Horas",
       "descricao": "Implemente a função `minutos_em_horas(minutos)` que retorna uma string no formato `<h>h <m>min`.",
       "codigo": "def minutos_em_horas(minutos):\n    pass",
-      "categoria": "Conversões",
+      "categoria": "Básicos",
       "testes": [
         { "entrada": "minutos_em_horas(90)", "esperado": "\"1h 30min\"" },
         { "entrada": "minutos_em_horas(60)", "esperado": "\"1h 0min\"" },
@@ -156,9 +157,9 @@
       "codigo": "def inverte_string(s):\n    pass",
       "categoria": "Strings",
       "testes": [
-        { "entrada": "inverte_string(\"abc\")", "esperado": "\"cba\"" },
-        { "entrada": "inverte_string(\"hello\")", "esperado": "\"olleh\"" },
-        { "entrada": "inverte_string(\"\")", "esperado": "\"\"" }
+        { "entrada": "inverte_string(\"abc\")", "esperado": "cba" },
+        { "entrada": "inverte_string(\"hello\")", "esperado": "olleh" },
+        { "entrada": "inverte_string(\"a\")", "esperado": "a" }
       ]
     },
     "conta_vogais": {
@@ -193,7 +194,18 @@
         { "entrada": "eh_palindromo(\"A man a plan a canal Panama\")", "esperado": "True" },
         { "entrada": "eh_palindromo(\"hello\")", "esperado": "False" }
       ]
-    }
+    },
+    "inverter_nome": {
+      "titulo": "Exercício: Inverter Nome",
+      "descricao": "Implemente a função `inverter_nome(nome, sobrenome)` que retorna a string `<sobrenome>, <nome>`.",
+      "codigo": "def inverter_nome(nome, sobrenome):\n    pass",
+      "categoria": "Strings",
+      "testes": [
+        { "entrada": "inverter_nome('Ana', 'Silva')", "esperado": "Silva, Ana" },
+        { "entrada": "inverter_nome('Pedro', 'Pedroso')", "esperado": "Pedroso, Pedro" },
+        { "entrada": "inverter_nome('João', 'Souza')", "esperado": "Souza, João" }
+      ]
+    }    
   },
   "estrutura de repetição": {
     "soma_ate_n": {
