@@ -32,7 +32,7 @@
          { "entrada": "area_retangulo(0, 10)", "esperado": "0" }
     ]
    },
-    "multiplicacao": {
+    "Conversão de temperatura": {
       "titulo": "Exercício: Conversão de Celsius para Fahrenheit",
       "descricao": "Implemente a função `celsius_para_fahrenheit(c)` que recebe a temperatura em graus Celsius e converta em graus Fahrenheit. <br> Fórmula: <pre>F = C * 9 / 5 + 32</pre> ",
       "codigo": "def celsius_para_fahrenheit(c):\n    pass",
