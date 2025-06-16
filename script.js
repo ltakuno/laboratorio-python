@@ -121,9 +121,9 @@ function verificarResposta() {
                 //row.insertCell(0).textContent = teste.entrada; // Mostra a entrada original para o usuário
                 //row.insertCell(1).textContent = esperado;
                 //row.insertCell(2).textContent = obtido;
-                row.insertCell(0).innerHTML = `<pre>$teste.entrada</pre>`;
-                row.insertCell(1).innerHTML = `<pre>$esperado</pre>`;
-                row.insertCell(2).innerHTML = `<pre>$obtido</pre>`;
+                row.insertCell(0).innerHTML = `<pre>${teste.entrada}</pre>`;
+                row.insertCell(1).innerHTML = `<pre>${esperado}</pre>`;
+                row.insertCell(2).innerHTML = `<pre>${obtido}</pre>`;
                 const resultCell = row.insertCell(3);
                 const passou = obtido === esperado;
                 resultCell.textContent = passou ? "OK" : "X";
