@@ -305,8 +305,8 @@
       "categoria": "Listas",
       "testes": [
         { "entrada": "concatena_listas([1, 2], [3, 4])", "esperado": "[1, 2, 3, 4]" },
-        { "entrada": "concatena_listas([\"a\", \"b\"], [])", "esperado": "[\"a\", \"b\"]" },
-        { "entrada": "concatena_listas([], [\"x\", \"y\"])", "esperado": "[\"x\", \"y\"]" }
+        { "entrada": "concatena_listas([\"a\", \"b\"], [])", "esperado": "['a', 'b']" },
+        { "entrada": "concatena_listas([], [\"x\", \"y\"])", "esperado": "['x', 'y']" }
       ]
     },
     "media_lista": {
