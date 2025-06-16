@@ -55,15 +55,15 @@
         { "entrada": "media_tres(0, 0, 0)", "esperado": "0.0" }
       ]
     },
-    "resto_divisao": {
-      "titulo": "Exercício: Resto da Divisão",
-      "descricao": "Implemente a função `resto_divisao(a, b)` que retorna o resto da divisão inteira de `a` por `b`. Considere que `b` nunca será zero.",
-      "codigo": "def resto_divisao(a, b):\n    pass",
-      "categoria": "Básicos",
+    "minutos_em_horas": {
+      "titulo": "Exercício: Minutos em Horas",
+      "descricao": "Implemente a função `minutos_em_horas(minutos)` que retorna uma string no formato `<h>h <m>min`.",
+      "codigo": "def minutos_em_horas(minutos):\n    pass",
+      "categoria": "Conversões",
       "testes": [
-        { "entrada": "resto_divisao(10, 3)", "esperado": "1" },
-        { "entrada": "resto_divisao(7, 2)", "esperado": "1" },
-        { "entrada": "resto_divisao(8, 4)", "esperado": "0" }
+        { "entrada": "minutos_em_horas(90)", "esperado": "\"1h 30min\"" },
+        { "entrada": "minutos_em_horas(60)", "esperado": "\"1h 0min\"" },
+        { "entrada": "minutos_em_horas(135)", "esperado": "\"2h 15min\"" }
       ]
     }
   },
