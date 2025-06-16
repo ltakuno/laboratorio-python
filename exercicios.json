@@ -132,7 +132,7 @@
           { "entrada": "dia_da_semana(1, 1, 1901)", "esperado": "terça-feira" },
           { "entrada": "dia_da_semana(25, 12, 2023)", "esperado": "segunda-feira" },
           { "entrada": "dia_da_semana(15, 8, 1945)", "esperado": "quarta-feira" },
-          { "entrada": "dia_da_semana(7, 9, 1822)", "esperado": "sábado" },
+          { "entrada": "dia_da_semana(7, 9, 1822)", "esperado": "sexta-feira" },
           { "entrada": "dia_da_semana(31, 12, 1999)", "esperado": "sexta-feira" }
         ]
       } 
