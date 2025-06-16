@@ -62,9 +62,9 @@
       "codigo": "def minutos_em_horas(minutos):\n    pass",
       "categoria": "Básicos",
       "testes": [
-        { "entrada": "minutos_em_horas(90)", "esperado": "\"1h 30min\"" },
-        { "entrada": "minutos_em_horas(60)", "esperado": "\"1h 0min\"" },
-        { "entrada": "minutos_em_horas(135)", "esperado": "\"2h 15min\"" }
+        { "entrada": "minutos_em_horas(90)", "esperado": "1h 30min" },
+        { "entrada": "minutos_em_horas(60)", "esperado": "1h 0min" },
+        { "entrada": "minutos_em_horas(135)", "esperado": "2h 15min" }
       ]
     }
   },
