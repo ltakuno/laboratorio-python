@@ -114,13 +114,16 @@ function verificarResposta() {
         return Sk.misceval.asyncToPromise(() => Sk.importMainWithBody("<stdin>", false, codigoParaExecutar, true))
             .then(() => {
                 // Skulpt pode adicionar uma quebra de linha no final, então trim() é importante.
-                const obtido = saidaTeste;
+                const obtido = saidaTeste.trim();
                 const esperado = String(teste.esperado).trim(); // Garante que esperado é string e sem espaços
 
                 const row = table.insertRow();
-                row.insertCell(0).textContent = teste.entrada; // Mostra a entrada original para o usuário
-                row.insertCell(1).textContent = esperado;
-                row.insertCell(2).textContent = obtido;
+                //row.insertCell(0).textContent = teste.entrada; // Mostra a entrada original para o usuário
+                //row.insertCell(1).textContent = esperado;
+                //row.insertCell(2).textContent = obtido;
+                row.insertCell(0).innerHTML = `<pre>$teste.entrada</pre>`;
+                row.insertCell(1).innerHTML = `<pre>$esperado</pre>`;
+                row.insertCell(2).innerHTML = `<pre>$obtido</pre>`;
                 const resultCell = row.insertCell(3);
                 const passou = obtido === esperado;
                 resultCell.textContent = passou ? "OK" : "X";
