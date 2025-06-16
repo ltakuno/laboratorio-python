@@ -11,4 +11,8 @@ Este repositório contém exercícios e testes em Python, além de arquivos auxi
 ##  Como Usar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/ltakuno/laboratorio-python.git
+   git clone https://github.com/ltakuno/laboratorio-python.git```
+   
+## Acesse o link
+```bash
+   https://ltakuno.github.io/laboratorio-python/```
