@@ -118,9 +118,9 @@ function verificarResposta() {
                 const esperado = String(teste.esperado).trim(); // Garante que esperado é string e sem espaços
 
                 const row = table.insertRow();
-                row.insertCell(0).textContent = teste.entrada; // Mostra a entrada original para o usuário
-                row.insertCell(1).textContent = esperado;
-                row.insertCell(2).textContent = obtido;
+                row.insertCell(0).textContent =  '<pre>' + teste.entrada + '</pre>' ; // Mostra a entrada original para o usuário
+                row.insertCell(1).textContent =  '<pre>' + esperado + '</pre>';
+                row.insertCell(2).textContent = '<pre>' + obtido + '</pre>';
                 const resultCell = row.insertCell(3);
                 const passou = obtido === esperado;
                 resultCell.textContent = passou ? "OK" : "X";
